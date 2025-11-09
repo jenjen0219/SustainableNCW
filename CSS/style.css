@@ -1,3 +1,7 @@
+* {
+    display:block;
+}
+
 button {
     background-color: white;
     border: none;
@@ -7,4 +11,41 @@ button {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+  }
+
+  #header01 {
+    width: 100%;
+    max-width: 100vw;
+    display: block;
+    z-index: 94;
+    top: 0;
+    position: fixed;
+    height: var(--header-size-xl, 9.25rem);
+    min-height: 100%;
+    box-sizing: border-box;
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  ul li {
+    float: left;
+  }
+  
+  ul li a {
+    display: block;
+    color: #584743;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    background-color: tan;
   }
