@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
 /* * {
     display:block;
 } */
@@ -6,11 +12,9 @@
     max-width: 100vw;
     display: flex;
     z-index: 94;
-  
-    /* position: fixed; */
-    height: 6em;
-    /* min-height: 100%; */
-    /* box-sizing: border-box; */
+      height: inherit;
+      padding: 20px;
+
 
   }
 
@@ -31,7 +35,7 @@ button {
     height: 4em;
   }
   .logobtn {
-    height: 4em;
+    height: inherit;
   }
 
   /* The navigation menu */
@@ -126,5 +130,24 @@ button {
     float: left;
 
     
+  }
+
+
+
+  .hero-section {
+    width: 100%;
+    background-image: url(/Images/mountainPicLandingPageBanner.avif);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    overflow-clip-margin:0px ;
+    overflow: auto;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+
   }
   
