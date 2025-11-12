@@ -116,6 +116,7 @@ button {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    /* wow, cannot believe that because this was set to hidden, that the drop down was getting cut off when it went past this element  */
     overflow: visible;
     background-color: white;
   }
