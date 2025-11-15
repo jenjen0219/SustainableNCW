@@ -1,68 +1,81 @@
+/* I noticed that there was a gap to the left of the hero img so I removed the default style in the html and body element */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
   }
-/* * {
-    display:block;
-} */
+
 #header01 {
-    width: 100%;
-    max-width: 100vw;
+    /* max-width: 100vw; */
     display: flex;
-    z-index: 94;
-      height: inherit;
-      padding: 20px;
+    align-items: center;
+    /* justify-content: flex-start; */
+    /* z-index: 94; */
 
 
   }
 
-button {
-    background-color: white;
-    border: none;
-    color: none;
-    /* padding: 15px 32px; */
-    /* height: 20px; */
-    text-align: center;
-    text-decoration: none;
-    /* display: inline-block; */
+  
+
+  #homeLogoBtn {
     cursor: pointer;
+ border: none;
+    color: none;   
+    background-color: white;
+padding:30px;
+gap: 0;
+justify-content: left;
+
+    text-decoration: none;
+    /* i struggled to understand why this element had so much of a gap to the left and right of the contained image and then i realized it must be a default setting and i was right! */
+    width: 15%;
   }
-  #homeLogoBtn{
-    justify-content: space-between;
-    float: left;
-    height: 4em;
-  }
+
+/* the button defined the width of the parent container, we of course want the full photo do display and set the height to auto so it perfectly sizes itself and doesnt look stretched or distorted */
   .logobtn {
-    height: inherit;
+    width: 100%;
+    height: auto;
+
   }
+
+  header .navbar {
+height: 100%;  }
+
+
 
   /* The navigation menu */
 .navbar {
     overflow: visible;
     background-color: white;
-    float: left;
-    position: relative;
+    float: center;
+    padding-left: 5%;
+    height: 100%;
+    /* position: left; */
+    /* display: block; */
   }
   
   /* Navigation links */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     color: #584743;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    list-style-type: none;
+    border-radius: 20px;
   }
   
   /* The subnavigation menu */
   .subnav {
     position: relative;
     display: inline-block;
+
   }
 
   .subnavbtn {
+    background-color: white;
     border: none;
     padding :16px;
 
@@ -70,13 +83,14 @@ button {
   
   /* Subnav button */
   .subnav .subnavbtn {
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     outline: none;
     color: #584743;
     padding:  14px 16px;
     background-color: light tan;
     font-family: inherit;
+    border-radius: 20px;
     /* margin: 0; */
   }
   
@@ -84,7 +98,8 @@ button {
   .navbar a:hover, .subnav:hover .subnavbtn {
     background-color: tan;
     position:relative;
-    display:block;
+    height: 100%;
+    /* display:block; */
   }
   
   /* Style the subnav content - positioned absolute */
@@ -93,7 +108,8 @@ button {
     position: absolute;
     background-color: white;
     width: fit-content;
-    z-index: 1000;
+    /* height: auto; */
+    /* z-index: 1000; */
   }
   
   /* Style the subnav links */
@@ -102,19 +118,24 @@ button {
     padding: 12px 16px;
     text-decoration: none;
     width: 175px;
-    display: block;
+    height: auto;
+
+    /* display: block; */
   }
   
   /* Add a grey background color on hover */
   .subnav-content a:hover {
     background-color: #e4d2ba;
     color: #584743;
+    height: 100px;
     /* text-decoration: none; */
   }
   
   /* When you move the mouse over the subnav container, open the subnav content */
   .subnav:hover .subnav-content {
     display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   }
 
   ul {
@@ -124,11 +145,12 @@ button {
     /* wow, cannot believe that because this was set to hidden, that the drop down was getting cut off when it went past this element  */
     overflow: visible;
     background-color: white;
+    height: 100%;
   }
   
 .navPlacement {
     float: left;
-
+    height: 100%;
     
   }
 
@@ -136,18 +158,18 @@ button {
 
   .hero-section {
     width: 100%;
-    background-image: url(/Images/mountainPicLandingPageBanner.avif);
+    /* background-image: url(/Images/hero.png); */
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: auto;
     overflow-clip-margin:0px ;
-    overflow: auto;
+    /* overflow: auto; */
   }
 
   .hero-section img {
     width: 100%;
     height: auto;
     display: block;
-
   }
   
