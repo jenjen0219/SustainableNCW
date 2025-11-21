@@ -214,9 +214,33 @@ height: 100px;
     }
 
     #upcoming-Title { 
-        font-size: 40px;
-        padding: 30px ;
-        color: white;
+        font-size: 50px;
+        padding: 40px ;
+        color: #516021;
+
+    }
+
+    .upcoming-slideshow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
     }
       
+    .upcoming-infoBody {
+        width: 658px;
+        background-color: white;
+        color: #414141;
+        /* display: flex;
+        justify-content: left;
+        text-align: left;
+        flex-direction: column; */
+        
+        
+    }
+
+    .upcoming-mainTitle {
+        font-size: 25px;
+        padding: 15px;
+    }
