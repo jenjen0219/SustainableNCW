@@ -204,4 +204,19 @@ height: 100px;
     
     }
 
+    .upcoming-eventsMain{ 
+        background-color: #9ab54f;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #upcoming-Title { 
+        font-size: 40px;
+        padding: 30px ;
+        color: white;
+
+    }
       
